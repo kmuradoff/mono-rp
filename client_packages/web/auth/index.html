@@ -1,0 +1,64 @@
+<!-- RAGEMP.PRO -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="wrapper-form">
+            <div id="error">
+                <h3 style="color:#ce3535;" id="errorp"></h3>
+            </div>
+                <form id="login" class="login">
+                    <p class="p">Авторизация</p>
+                    <p class="MessageError"></p>
+                    <input type="text" id="log-login" class="log-login" placeholder="Введите логин">
+                    <input type="password" id="log-password" class="log-password" placeholder="Введите Пароль">
+                    <button type="button" onclick="LogAttempt()">Войти</button>
+                    <button type="button" onclick="ShowReg()">Регистрация</button>
+                </form>
+              
+                <form id="reg" class="reg">    
+                    <p class="p">Регистрация</p>
+                    <p class="MessageError"></p>
+                    <input type="text" id="reg-login"  class="reg-login" placeholder="Введите логин">
+                    <input type="email"  id="reg-email" class="reg-email" placeholder="Введите почту">
+                    <input type="password"  id="reg-password" class="reg-password" placeholder="Введите пароль">
+                    <input type="password" id="reg-password-confirm"class="reg-password-confirm" placeholder="Повторите пароль">
+                    <button type="button" onclick="RegAttempt()">Зарегистрироваться</button>
+                    <button type="button" onclick="ShowLogin()">Авторизация</button>
+                </form>
+            
+        </div>
+        <script>
+        function sendError(text){
+            document.getElementById("errorp").innerHTML = text;
+        }
+        function LogAttempt(){
+            var LogLogin = document.getElementById("log-login").value;
+            var LogPassword = document.getElementById("log-password").value;
+            mp.trigger("authLogin", LogLogin, LogPassword);
+        }
+        function RegAttempt(){
+            var regLogin = document.getElementById("reg-login").value;
+            var regEmail = document.getElementById("reg-email").value;
+            var regPassword = document.getElementById("reg-password").value;
+            mp.trigger('authRegister', regLogin, regEmail, regPassword);
+        }
+        function ShowReg() {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("reg").style.display = "block";
+        }
+
+        function ShowLogin() {
+            document.getElementById("login").style.display = "block";
+            document.getElementById("reg").style.display = "none";
+        }
+        </script>
+</body>
+</html>

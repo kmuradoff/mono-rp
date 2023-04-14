@@ -1,0 +1,17 @@
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.csproj.AssemblyReference.cache
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.Properties.Resources.resources
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.csproj.GenerateResource.cache
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.AssemblyInfoInputs.cache
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.AssemblyInfo.cs
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.csproj.CoreCompileInputs.cache
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.exe
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.deps.json
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.runtimeconfig.json
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.runtimeconfig.dev.json
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.dll
+C:\Users\Kamal\Desktop\server-files\dotnet\resources\roleplay\Release\roleplay.pdb
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.csproj.CopyComplete
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.dll
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.pdb
+C:\Users\Kamal\Desktop\server-files\backend\roleplay\roleplay\obj\Release\roleplay.genruntimeconfig.cache

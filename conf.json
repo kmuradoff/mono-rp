@@ -6,7 +6,7 @@
 	"announce" : true,
 	"language": "ru",
 	"url": "https://muradoff.com",
-	"csharp" : "disabled",
+	"csharp" : "enabled",
 	"port": 22005,
 	"max-ping": 180,
 	"voice-chat": true,

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "roleplay": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Kamal\\Desktop\\server-files",
+      "nativeDebugging": false
+    },
+    "roleplayExec": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Kamal\\Desktop\\server-files\\ragemp-server.exe",
+      "workingDirectory": "C:\\Users\\Kamal\\Desktop\\server-files"
+    }
+  }
+}
