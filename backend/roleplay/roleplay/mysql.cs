@@ -91,6 +91,7 @@ namespace roleplay
                     reader.Read();
                     account._id = reader.GetInt32("id");
                     account._cash = reader.GetInt64("cash");
+                    account._adminLevel = reader.GetInt32("adminLevel");
                 }
             }
         }

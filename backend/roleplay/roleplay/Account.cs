@@ -31,8 +31,7 @@ namespace roleplay
 
         public bool IsPlayerHasAdminLevel(int adminLevel)
         {
-            if (adminLevel >= _adminLevel) return true;
-            return false;
+            return adminLevel <= _adminLevel;
         }
 
 

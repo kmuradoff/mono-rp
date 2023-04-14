@@ -10,6 +10,13 @@ namespace roleplay
         private void spawnVehicle(Player player, String vehname, int color1, int color2) {
             try
             {
+                Account account = player.GetData<Account>(Account._accountKey);
+                if (!account.IsPlayerHasAdminLevel((int)Account.AdminRanks.Helper))
+                {
+                    player.SendNotification("~r~У вас нет доступа к данной команде.");
+                    return;
+                }
+
                 uint vhash = NAPI.Util.GetHashKey(vehname);
                 if (vhash <= 0)
                 {
@@ -20,16 +27,26 @@ namespace roleplay
                 veh.Locked = false;
                 veh.EngineStatus = true;
                 player.SetIntoVehicle(veh, (int)VehicleSeat.Driver);
-            } catch { }
-
-            
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         [Command("weather", "Команда weather меняет погоду в игре.")]
         private void setWeather(Player player, byte weatherId) {
-
+            
             string weatherType = " ";
             try {
+                Account account = player.GetData<Account>(Account._accountKey);
+                if (!account.IsPlayerHasAdminLevel((int)Account.AdminRanks.Moderator))
+                {
+                    player.SendNotification("~r~У вас нет доступа к данной команде.");
+                    return;
+                }
+                
                 switch (weatherId) {
                     case 0:
                         weatherType = "EXTRASUNNY";
@@ -82,12 +99,11 @@ namespace roleplay
                 }
                 NAPI.World.SetWeather(weatherType);
             }
-            catch
+            catch (Exception e)
             {
+                Console.WriteLine(e);
+                throw;
             }
         }
-
-       
-
     }
 }
